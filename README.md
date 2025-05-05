@@ -1,29 +1,29 @@
-# EB Face Detection
+# 👤 EB Face Detection
 
 A Flask-based face detection service deployed on AWS Elastic Beanstalk. This application uses a custom PyTorch model to detect faces in images.
 
-## Overview
+## 📋 Overview
 
 This service provides a REST API endpoint for face detection in images. The application loads a pre-trained face detection model from AWS S3 and exposes an endpoint that accepts image data, processes it, and returns face detection results.
 
-## Features
+## ✨ Features
 
-- Face detection using a custom PyTorch model
-- REST API endpoint for image processing
-- AWS Elastic Beanstalk deployment configuration
-- CORS support for specified domains
-- Image preprocessing and result scaling
+- 🔍 Face detection using a custom PyTorch model
+- 🌐 REST API endpoint for image processing
+- ☁️ AWS Elastic Beanstalk deployment configuration
+- 🔒 CORS support for specified domains
+- 🖼️ Image preprocessing and result scaling
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- Python 3
-- Flask web framework
-- PyTorch for deep learning
-- OpenCV for image processing
-- AWS Elastic Beanstalk for deployment
-- AWS S3 for model storage
+- 🐍 Python 3
+- 🌶️ Flask web framework
+- 🔥 PyTorch for deep learning
+- 📷 OpenCV for image processing
+- 🚀 AWS Elastic Beanstalk for deployment
+- 🗄️ AWS S3 for model storage
 
-## API Endpoints
+## 🔌 API Endpoints
 
 ### Predict Endpoint
 
@@ -38,11 +38,11 @@ This service provides a REST API endpoint for face detection in images. The appl
 - **Method**: `GET`
 - **Response**: Simple text message indicating the service is running
 
-## Deployment
+## 🚀 Deployment
 
 This application is configured for deployment on AWS Elastic Beanstalk. The necessary configuration files are provided in the `.ebextensions` and `.platform` directories.
 
-### Environment Variables
+### 🔧 Environment Variables
 
 The following environment variables can be configured:
 
@@ -50,7 +50,7 @@ The following environment variables can be configured:
 - `MODEL_SCRIPT_KEY`: Path to the model script in S3 (default: 'FaceData/model/model.py')
 - `MODEL_WEIGHTS_KEY`: Path to the model weights in S3 (default: 'FaceData/output/model_20250413_003714.pth')
 
-## Local Development
+## 💻 Local Development
 
 1. Create a virtual environment:
 
@@ -70,7 +70,7 @@ The following environment variables can be configured:
    python application.py
    ```
 
-## Project Structure
+## 📁 Project Structure
 
 - `application.py`: Main Flask application
 - `utils/`: Utility modules
